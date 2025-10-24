@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medium — Clone (Desktop)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Spectral:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="navbar" class="navbar">
+      <div class="container nav-inner">
+        <a class="brand" href="#">
+          <img src="assets/imgs/svg/logo.svg" alt="Medium" />
+        </a>
+        <nav class="nav-links">
+          <a href="#">Our story</a>
+          <a href="#">Membership</a>
+          <a href="#">Write</a>
+          <a href="#">Sign in</a>
+          <a href="#" class="btn btn-cta" id="ctaBtn">Get started</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1>Stay curious.</h1>
+            <p>
+              Discover stories, thinking, and expertise from writers on any
+              topic.
+            </p>
+            <a href="#" class="btn btn-cta btn-lg">Start reading</a>
+          </div>
+          <div class="hero-art" aria-hidden="true" id="mArt"></div>
+        </div>
+      </section>
+
+      <section class="trending fade-in">
+        <div class="container">
+          <div class="trending-header">
+            <img src="assets/imgs/svg/trending.svg" alt="" />
+            <span>Trending on Medium</span>
+          </div>
+          <div class="trending-grid">
+            <!-- 6 trending cards -->
+            <article class="trend">
+              <span class="idx">01</span>
+              <div class="meta">
+                <img class="avatar" src="assets/imgs/image03.jpeg" alt="" />
+                <span class="author">Ali Akbar</span>
+              </div>
+              <h3>What I learned building a Medium clone in a weekend</h3>
+              <div class="post-meta">
+                <time>Oct 24</time><span class="dot">·</span
+                ><span>7 min read</span>
+                <img class="star" src="assets/imgs/svg/star.svg" alt="star" />
+              </div>
+            </article>
+
+            <article class="trend">
+              <span class="idx">02</span>
+              <div class="meta">
+                <img class="avatar" src="assets/imgs/image04.png" alt="" />
+                <span class="author">UX Collective</span>
+              </div>
+              <h3>Designing for readability on the web</h3>
+              <div class="post-meta">
+                <time>Oct 22</time><span class="dot">·</span
+                ><span>5 min read</span>
+              </div>
+            </article>
+
+            <article class="trend">
+              <span class="idx">03</span>
+              <div class="meta">
+                <img class="avatar" src="assets/imgs/image05.jpeg" alt="" />
+                <span class="author">The Startup</span>
+              </div>
+              <h3>Why animations matter more than you think</h3>
+              <div class="post-meta">
+                <time>Oct 21</time><span class="dot">·</span
+                ><span>8 min read</span>
+              </div>
+            </article>
+
+            <article class="trend">
+              <span class="idx">04</span>
+              <div class="meta">
+                <img class="avatar" src="assets/imgs/image06.png" alt="" />
+                <span class="author">Better Programming</span>
+              </div>
+              <h3>Mastering CSS Grid and Flexbox together</h3>
+              <div class="post-meta">
+                <time>Oct 19</time><span class="dot">·</span
+                ><span>6 min read</span>
+              </div>
+            </article>
+
+            <article class="trend">
+              <span class="idx">05</span>
+              <div class="meta">
+                <img class="avatar" src="assets/imgs/image07.jpeg" alt="" />
+                <span class="author">Towards Data Science</span>
+              </div>
+              <h3>10 JavaScript tricks you’ll wish you knew</h3>
+              <div class="post-meta">
+                <time>Oct 17</time><span class="dot">·</span
+                ><span>9 min read</span>
+              </div>
+            </article>
+
+            <article class="trend">
+              <span class="idx">06</span>
+              <div class="meta">
+                <img class="avatar" src="assets/imgs/image08.jpeg" alt="" />
+                <span class="author">Level Up Coding</span>
+              </div>
+              <h3>From zero to hero with IntersectionObserver</h3>
+              <div class="post-meta">
+                <time>Oct 15</time><span class="dot">·</span
+                ><span>4 min read</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="posts fade-in">
+        <div class="container posts-grid">
+          <div class="posts-list">
+            <article class="post">
+              <div class="col col-text">
+                <div class="meta">
+                  <img class="avatar" src="assets/imgs/image09.jpeg" alt="" />
+                  <span class="author">ByteByteGo</span>
+                </div>
+                <h2>Understanding System Design Tradeoffs</h2>
+                <p class="excerpt">
+                  Latency vs throughput, consistency vs availability, and other
+                  timeless dilemmas.
+                </p>
+                <div class="post-meta">
+                  <time>Oct 12</time><span class="dot">·</span
+                  ><span>10 min read</span>
+                  <button class="icon-btn" aria-label="bookmark">
+                    <img src="assets/imgs/svg/bookmark.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+              <div class="col col-img">
+                <img src="assets/imgs/image12.png" alt="thumb" />
+              </div>
+            </article>
+
+            <article class="post">
+              <div class="col col-text">
+                <div class="meta">
+                  <img class="avatar" src="assets/imgs/image10.jpeg" alt="" />
+                  <span class="author">Towards AI</span>
+                </div>
+                <h2>When to reach for Deep Learning</h2>
+                <p class="excerpt">
+                  A pragmatic guide to choosing the right model for the job.
+                </p>
+                <div class="post-meta">
+                  <time>Oct 10</time><span class="dot">·</span
+                  ><span>6 min read</span>
+                  <button class="icon-btn" aria-label="bookmark">
+                    <img src="assets/imgs/svg/bookmark.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+              <div class="col col-img">
+                <img src="assets/imgs/image13.png" alt="thumb" />
+              </div>
+            </article>
+
+            <article class="post">
+              <div class="col col-text">
+                <div class="meta">
+                  <img class="avatar" src="assets/imgs/image11.jpeg" alt="" />
+                  <span class="author">The Writing Cooperative</span>
+                </div>
+                <h2>Write better headlines with these 7 rules</h2>
+                <p class="excerpt">
+                  Clarity beats cleverness, but you can have both with the right
+                  structure.
+                </p>
+                <div class="post-meta">
+                  <time>Oct 8</time><span class="dot">·</span
+                  ><span>5 min read</span>
+                  <button class="icon-btn" aria-label="bookmark">
+                    <img src="assets/imgs/svg/bookmark.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+              <div class="col col-img">
+                <img src="assets/imgs/image14.png" alt="thumb" />
+              </div>
+            </article>
+          </div>
+
+          <aside class="sidebar">
+            <div class="card topics">
+              <h4>Discover more of what matters to you</h4>
+              <div class="chips">
+                <a href="#" class="chip">Programming</a>
+                <a href="#" class="chip">Data Science</a>
+                <a href="#" class="chip">Technology</a>
+                <a href="#" class="chip">Self Improvement</a>
+                <a href="#" class="chip">Writing</a>
+                <a href="#" class="chip">Machine Learning</a>
+                <a href="#" class="chip">Productivity</a>
+              </div>
+              <a href="#" class="see-more">See more topics</a>
+            </div>
+
+            <div class="card footer-links">
+              <a href="#">Help</a><a href="#">Status</a><a href="#">Writers</a
+              ><a href="#">Blog</a> <a href="#">Careers</a
+              ><a href="#">Privacy</a><a href="#">Terms</a><a href="#">About</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
